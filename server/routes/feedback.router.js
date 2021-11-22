@@ -1,8 +1,9 @@
 const router = require('express').Router();
-const pool = require('../modules.pool.js');
+const pool = require('../modules/pool.js');
 
 // POST
 router.post('/', (req, res)=>{
+    console.log('POST route hit');
     const queryString = `INSERT INTO feedback (feeling, understanding, support, comments)
     VALUES ($1, $2, $3, $4)`;
     let values = [req.body.feeling, req.body.understanding, req.body.support, req.body.comments];
