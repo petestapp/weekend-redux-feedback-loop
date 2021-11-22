@@ -1,17 +1,17 @@
 import React from "react";
 import { useState } from "react";
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 
 function Feeling(props){
     // const[ name, setName ]=useState( null );
     const [feeling, setFeeling] = useState(undefined);
-    const dispatch = useDispatch;
+    const dispatch = useDispatch();
 
     const getFeeling = (event) =>{
         setFeeling(Number(event.target.value));
     }
 
-    const sendFeeling = (event) =>{
+    const sendFeeling = () =>{
         dispatch({
             type: `SET_FEELING`,
             payload: feeling

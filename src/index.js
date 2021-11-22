@@ -16,7 +16,16 @@ const feedback = (
         comments: ''
     }, action)=>{
         if(action.type === 'SET_FEELING'){
-            return [...state, action.payload]
+            return {...state, feeling: action.payload};
+        }
+        if(action.type === 'SET_UNDERSTANDING'){
+            return {...state, understanding: action.payload};
+        }
+        if(action.type === 'SET_SUPPORT'){
+            return {...state, support: action.payload};
+        }
+        if(action.type === 'SET_COMMENTS'){
+            return {...state, comments: action.payload};
         }
     return state
 }
