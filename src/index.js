@@ -27,6 +27,9 @@ const feedback = (
         if(action.type === 'SET_COMMENTS'){
             return {...state, comments: action.payload};
         }
+        if(action.type === 'EMPTY'){
+            return {};
+        }
     return state
 }
 

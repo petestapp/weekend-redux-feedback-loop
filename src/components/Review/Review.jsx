@@ -9,6 +9,7 @@ function Review( props ){
 
     const submitAnswers = () =>{
         axios.post('/feedback', feedback).then((response)=>{
+            dispatch({type: 'EMPTY'})
         }).catch((err)=>{
             alert(`error adding answers to database`);
             console.log(err);
