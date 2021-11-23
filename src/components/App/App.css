@@ -1,9 +1,14 @@
 .App {
   text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.App-body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .App-header {
-  background-color: #033076;
+  background-color: cadetblue;
   min-height: 70px;
   padding: 20px;
   color: white;
