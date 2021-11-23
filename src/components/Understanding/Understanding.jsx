@@ -33,7 +33,7 @@ function Understanding(props){
 
     return(
         <div>
-            <h1>How are you Understanding today?</h1>
+            <h1>How well are you understanding the content?</h1>
             <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
                 <Select
                     variant="filled"

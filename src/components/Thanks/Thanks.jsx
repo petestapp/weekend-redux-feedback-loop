@@ -6,7 +6,7 @@ function Thanks( props ){
 
     return(
         <div>
-            <h1>Thanks</h1>
+            <h1>Thank You!</h1>
             <Button component={Link} to={'/'} variant="contained">
                 Leave New Feedback
             </Button>
